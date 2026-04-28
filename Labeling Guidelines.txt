@@ -1,0 +1,26 @@
+Labeling Guidelines
+
+Data was annotated using a 1-2-3 sequence to ensure the AI learns the relationship between the region, the numbers, and the time.
+
+Example Format:
+Data: [Location] | Cases: [Statistic] | Date: [Date]
+Example: Imo | Cases: 9 | Date: 22/06/2020
+Entity Definitions:
+
+    Location (1): Geographic focus (e.g., Imo, Lagos, Kano, FCT).
+
+    Statistic (2): The numerical value associated with the report (e.g., 9, 344).
+
+    Date (3): The specific calendar date or timeframe (e.g., 22/06/2020).
+
+    Note: This 1-2-3 structure was maintained across 344 tasks to ensure high accuracy during the model training phase.
+
+📁 Project Structure
+
+    labeled_data.json: The core dataset containing 344 manually verified labels.
+
+    manage_work.py: Professional CLI tool to inspect label distribution and clean exports.
+
+    requirements.txt: List of necessary Python libraries (spaCy, requests).
+
+    prep_training.py: Script to convert JSON dataset into .spacy binary format.

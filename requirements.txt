@@ -1,0 +1,8 @@
+# Core AI and NLP
+spacy>=3.7.0
+
+# Label Studio Integration
+label-studio-sdk>=0.0.34
+
+# General Utilities
+requests>=2.31.0
